@@ -133,7 +133,11 @@ export default {
       scrollY: false,
       click: true
     })
-  }
+  },
+  beforeDestroy () {
+
+  },
+  methods: {},
 }
 </script>
 
@@ -202,14 +206,14 @@ ol {
       width: .3rem;
       background-color: #fff;
       box-shadow: -5px 0px 5px 2px #fff;
-      z-index: 2;
+      z-index: 3;
     }
   }
   .color{
     color: orange;
   }
 }
-// side 
+// side
 .side-box{
   background: rgba(255,255,255, .2);
 }
