@@ -209,7 +209,7 @@ ol {
     color: orange;
   }
 }
-// side
+// side 
 .side-box{
   background: rgba(255,255,255, .2);
 }
