@@ -64,8 +64,194 @@
           <div class="ellipsis iconfont icon-ellipsis2"></div>
         </div>
       </header>
+      <!-- map contianer -->
       <div class="map-container">
-        <baidu-map center="深圳" :zoom="zoom" @ready="handler" :scroll-wheel-zoom="true" style="height:100%" @click="getClickInfo"></baidu-map>
+        <baidu-map center="广州" :zoom="zoom" @ready="handler" :scroll-wheel-zoom="true" style="height:100%" @click="getClickInfo"></baidu-map>
+      </div>
+      <!-- banner -->
+      <div class="banner">
+        <div class="ban-icon"><span class="iconfont icon-icon--"></span></div>
+        <p>助力11.11，30元快车券免费拿</p>
+        <button>点击领取</button>
+      </div>
+      <!-- book car -->
+      <div class="book-car">
+        <ul class="book">
+          <li><a href="#">现在</a></li>
+          <li><a href="#">预约</a></li>
+          <li><a href="#">代叫</a></li>
+          <li><a href="#">接送机</a></li>
+          <li><a href="#">远程特惠</a></li>
+        </ul>
+        <div class="star">
+          <div class="point"></div>
+          <p class="starAddr">安居宝科技园-西北2门</p>
+          <p class="starDesc"><span ref="remonedAddr">“中能科技园”</span>附近最佳的上车点</p>
+        </div>
+        <div class="end">
+          <div class="point"></div>
+          <p class="endAddr">您要去哪儿</p>
+        </div>
+      </div>
+      <!-- safe banner -->
+      <div class="banner-safe">
+        <div class="level">
+          <div class="left">
+            <p>安全中心全新升级</p>
+            <h4>状态全程更新</h4>
+            <h4>守护清晰可见</h4>
+          </div>
+          <div class="right"></div>
+        </div>
+        <div class="detail">
+          <p><span>查看详情</span><span class="iconfont icon-next"></span></p>
+        </div>
+      </div>
+      <!-- safe banner -->
+      <div class="banner-safe">
+        <div class="level">
+          <div class="left">
+            <p>建国为大家的车费要了个透明交代</p>
+            <h4>一千个哈密雷特打车</h4>
+            <h4>也只有一套规则</h4>
+          </div>
+          <div class="right"></div>
+        </div>
+        <div class="detail">
+          <p><span>速来围观</span><span class="iconfont icon-next"></span></p>
+        </div>
+      </div>
+      <!-- advertisement -->
+      <div class="ad">
+        <span>广告</span>
+      </div>
+      <!-- member part -->
+      <div class="member">
+        <div class="up">
+          <p class="time">有效期至2019年12月31日</p>
+        <h1 class="member-level"><span>黄金会员</span><span class="iconfont icon-star"></span></h1>
+        <div class="box">
+          <div class="item">
+            <div class="imgbox iconfont icon-quan"></div>
+            <span>购券折扣</span>
+          </div>
+          <div class="item">
+            <div class="imgbox iconfont icon-gift"></div>
+            <span>生日礼包</span>
+          </div>
+          <div class="item">
+            <div class="imgbox iconfont icon-kefu"></div>
+            <span>vip客服</span>
+          </div>
+          <div class="item">
+            <div class="imgbox iconfont icon-car"></div>
+            <span>免费升舱</span>
+          </div>
+          <div class="item">
+            <div class="imgbox iconfont icon-shandian"></div>
+            <span>极速接驾</span>
+          </div>
+        </div>
+        </div>
+        <p class="member-more">查看更多福利<span class="iconfont icon-next"></span></p>
+      </div>
+      <!-- discount -->
+      <div class="discount">
+        <div class="main-box">
+          <div class="item">
+            <div class="up">
+              <p>85折5张仅售1元</p>
+              <h2>套餐新用户专享</h2>
+              <div class="box">
+                <div class="one">
+                  <span>5次</span>
+                  <h1>8.5折</h1>
+                </div>
+                <div class="two"></div>
+              </div>
+            </div>
+            <div class="buy">
+              <p><span>1.00元</span><del>50.00元</del></p>
+              <p><span>立即购买</span><span class="iconfont icon-next"></span></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="up">
+              <p>85折5张仅售1元</p>
+              <h2>套餐新用户专享</h2>
+              <div class="box">
+                <div class="one">
+                  <span>5次</span>
+                  <h1>8.5折</h1>
+                </div>
+                <div class="two"></div>
+              </div>
+            </div>
+            <div class="buy">
+              <p><span>1.00元</span><del>50.00元</del></p>
+              <p><span>立即购买</span><span class="iconfont icon-next"></span></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="up">
+              <p>85折5张仅售1元</p>
+              <h2>套餐新用户专享</h2>
+              <div class="box">
+                <div class="one">
+                  <span>5次</span>
+                  <h1>8.5折</h1>
+                </div>
+                <div class="two"></div>
+              </div>
+            </div>
+            <div class="buy">
+              <p><span>1.00元</span><del>50.00元</del></p>
+              <p><span>立即购买</span><span class="iconfont icon-next"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 好礼放送 -->
+      <div class="banner-safe">
+        <div class="level">
+          <div class="left">
+            <p>领最高3888元快车券</p>
+            <h4>好礼放送 守护加倍</h4>
+            <h4></h4>
+          </div>
+          <div class="right"></div>
+        </div>
+        <div class="detail">
+          <p><span>查看详情</span><span class="iconfont icon-next"></span></p>
+        </div>
+      </div>
+      <!-- 11.11正品狂欢 -->
+      <div class="banner-safe">
+        <div class="level">
+          <div class="left">
+            <p>领最高3888元快车券</p>
+            <h4>5折狂购</h4>
+            <h4>养车优惠 限时限量</h4>
+          </div>
+          <div class="right"></div>
+        </div>
+        <div class="detail">
+          <p><span>查看详情</span><span class="iconfont icon-next"></span></p>
+        </div>
+      </div>
+      <!-- 证照信息 -->
+      <div class="banner-safe">
+        <div class="level">
+          <div class="left">
+            <p>证照信息详情</p>
+            <h4>滴滴平台</h4>
+            <h4>证照信息公示</h4>
+          </div>
+          <div class="right"></div>
+        </div>
+        <div class="detail">
+          <p><span>查看详情</span><span class="iconfont icon-next"></span></p>
+        </div>
       </div>
     </div>
     <transition>
@@ -387,8 +573,6 @@ ol {
   position: relative;
   .user {
     width: 100%;
-    // height: 1rem;
-    // background-color: orange;
     .imgbox {
       width: 0.5rem;
       height: 0.5rem;
@@ -470,6 +654,249 @@ ol {
   background: rgba(0, 0, 0, 0.05);
   flex: 1;
 }
+// banner part
+.banner{
+  margin: 0rem .1rem;
+  // width: 100%;
+  height: .5rem;
+  // background-color: orange;
+  // line-height: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem .1rem;
+  .ban-icon{
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+    background-color: #f5f6f8;
+    line-height: .3rem;
+  }
+  >button{
+    padding: .1rem;
+    border: 1px solid #cab38a;
+    color: #cab38a;
+    background-color: transparent;
+  }
+}
+// book car
+.book-car{
+  margin: .1rem .1rem;
+  // background-color: orange;
+  .book{
+    padding: .15rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    a{
+      display: block;
+      padding: .05rem .12rem;
+      border: 1px solid #eee;
+      border-radius: 18px;
+    }
+  }
+  .star,.end{
+    position: relative;
+    margin-left: .3rem;
+    // background-color: orange;
+    text-align: left;
+    padding: .1rem 0rem;
+    .point{
+      width: .08rem;
+      height: .08rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: -.15rem;
+      transform: translateY(-50%);
+    }
+    .starDesc{
+      font-size: .12rem;
+      color: #36b393;
+    }
+  }
+  .star{
+    border-bottom: 1px solid #eee;
+    .point{
+      background-color: #36b393;
+    }
+  }
+  .end{
+    padding: .15rem 0rem;
+    .point{
+      background-color: orange;
+    }
+  }
+}
+// banner safe
+.banner-safe{
+  margin: .1rem 0rem;
+  // background-color: orange;
+  .level{
+    padding: .1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      font-size: .14rem;
+      color: #999;
+      text-align: left;
+    }
+    h4{
+      font-size: .24rem;
+      text-align: left;
+    }
+    .right{
+      width: .7rem;
+      height: .7rem;
+      border-radius: 50%;
+      background-color: #36b393;
+    }
+  }
+  .detail{
+    padding: .15rem;
+    text-align: right;
+    background: linear-gradient(90deg, #fff 0%, #f2f2f2 100%);
+    .icon-next{
+      font-size: .14rem;
+      margin-left: .1rem;
+    }
+  }
+}
+// advertisement
+.ad{
+  margin: 0rem .1rem;
+  height: 1rem;
+  position: relative;
+  background-color: orange;
+  >span{
+    padding: 0rem .03rem;
+    background-color: #a0a1a3;
+    font-size: .12rem;
+    position: absolute;
+    top: .02rem;
+    right: .02rem;
+  }
+}
+// member
+.member{
+  margin: .1rem;
+  text-align: left;
+  background: linear-gradient(#f4e4c2 0%,#eed2a3 100%);
+  .up{
+    padding: .15rem;
+  }
+  h1{
+    margin: .1rem 0rem;
+    >.iconfont{
+      padding: .03rem;
+      color: #ebc07c;
+      // border: 1px solid #eee;
+      border-radius: 50%;
+      background-color: #333;
+    }
+  }
+  .box{
+    display: flex;
+    justify-content: space-between;
+    .item{
+      .imgbox{
+        width: .3rem;
+        height: .3rem;
+        border-radius: 50%;
+        border: 1px solid #eee;
+        text-align: center;
+        line-height: .3rem;
+        margin: 0 auto;
+        background-color: #d7c097;
+      }
+      span{
+        font-size: .12rem;
+      }
+    }
+  }
+  .member-more{
+    padding: .15rem;
+    text-align: right;
+    background: linear-gradient(90deg, #eace9c 0%, #e1d1af 100%);
+    >span{
+      margin-left: .1rem;
+      font-size: .14rem;
+    }
+  }
+}
+// discount
+.discount{
+  // height: 2.5rem;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  // position: relative;
+  .main-box{
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 7.9rem;
+    display: flex;
+    justify-content: center;
+    >.item{
+      text-align: left;
+      width: 2.5rem;
+      background-color: lightgreen;
+      margin: 0rem .05rem;
+      .up{
+        padding: .1rem;
+      }
+      p{
+        font-size: .12rem;
+        color: #999;
+      }
+      .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .one{
+          >span{
+            padding: 0rem .1rem;
+            border-radius: .1rem;
+            color: #fff;
+            background-color: #393939;
+          }
+        }
+        .two{
+          width: 1rem;
+          height: .5rem;
+          background-color: #fff;
+        }
+      }
+      .buy{
+        padding: .15rem;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(90deg, #fff 0%, #f7f7f7 100%);
+        >p{
+          &:first-of-type{
+            span{
+              &:first-of-type{
+                color: orange;
+                margin-right: .05rem;
+              }
+            }
+          }
+          &:last-of-type{
+            >.icon-next{
+              font-size: .12rem;
+              margin-left: .05rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 动画
 .v-enter, .v-leave-to{
   opacity: 0;
   transform: translateX(-60%);
