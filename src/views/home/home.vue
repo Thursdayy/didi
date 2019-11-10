@@ -65,7 +65,7 @@
         </div>
       </header>
       <div class="map-container">
-        <baidu-map center="广州" :zoom="zoom" @ready="handler" :scroll-wheel-zoom="true" style="height:100%" @click="getClickInfo"></baidu-map>
+        <baidu-map center="深圳" :zoom="zoom" @ready="handler" :scroll-wheel-zoom="true" style="height:100%" @click="getClickInfo"></baidu-map>
       </div>
     </div>
     <transition>
