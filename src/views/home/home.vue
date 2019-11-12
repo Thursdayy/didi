@@ -67,6 +67,21 @@
       <!-- map contianer -->
       <div class="map-container">
         <baidu-map center="广州" :zoom="zoom" @ready="handler" :scroll-wheel-zoom="true" style="height:100%" @click="getClickInfo"></baidu-map>
+        <div class="notice"><span class="iconfont icon-icon--"></span></div>
+      </div>
+      <div class="tip">
+        <div class="words">
+          <div class="box">
+            <p>人脸认证</p>
+            <p>出车司机已全部完成安全培训</p>
+          </div>
+          <div class="safe">
+            <span class="iconfont icon-anquanzhongxin"></span>
+          </div>
+        </div>
+        <div class="location">
+          <span class="iconfont icon-location"></span>
+        </div>
       </div>
       <!-- banner -->
       <div class="banner">
@@ -553,6 +568,90 @@ ol {
 .map-container{
   width: 100%;
   height: 4rem;
+  position: relative;
+  .notice{
+    width: .3rem;
+    height: .3rem;
+    font-size: .26rem;
+    font-weight: 700;
+    color: orangered;
+    // background-color: #fff;
+    border-radius: 50%;
+    line-height: .3rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+  }
+}
+// tip
+.tip{
+  margin: .1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  .words{
+    margin-left: .15rem;
+    padding: .1rem .1rem .1rem .2rem;
+    background-color: #578ffc;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    height: .4rem;
+    >.box{
+      height: .2rem;
+      overflow: hidden;
+    }
+    p{
+      line-height: .2rem;
+      &:first-of-type{
+        animation: change 5s linear infinite;
+      }
+    }
+    // overflow: hidden;
+    // >p{
+    //   line-height: .25rem;
+    // }
+    >.safe{
+      position: absolute;
+      padding: .08rem;
+      background-color: #fff;
+      border-radius: 5px;
+      color: #578ffc;
+      left: -.15rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .location{
+    width: .3rem;
+    height: .3rem;
+    font-size: .26rem;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: .3rem;
+  }
+}
+// tip animate
+@keyframes change {
+  0%{
+    margin-top: -40px;
+  }
+  5%{
+    margin-top: -20px;
+  }
+  45%{
+    margin-top: -20px;
+  }
+  50%{
+    margin-top: 0;
+  }
+  99.9%{
+    margin-top: 0;
+  }
+  100%{
+    margin-top: -40px;
+  }
 }
 // side
 .side-box {
