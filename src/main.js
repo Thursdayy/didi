@@ -3,6 +3,13 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import BaiduMap from 'vue-baidu-map'
+import { Picker, Popup } from 'mint-ui'
+// import {  } from 'mint-ui'
+
+Vue.component(Picker.name, Picker)
+Vue.component(Popup.name, Popup)
+
+// Vue.use(MintUI)
 
 Vue.config.productionTip = false
 Vue.use(BaiduMap, {

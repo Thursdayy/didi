@@ -283,20 +283,20 @@
         </div>
         <div class="func">
           <ul>
-            <li>
+            <li @click.stop="toOrderEvt">
               <span class="iconfont icon-dingdanguanli"></span>订单
             </li>
             <li>
-              <span class="iconfont icon-anquanzhongxin"></span>订单
+              <span class="iconfont icon-anquanzhongxin"></span>安全
             </li>
             <li>
-              <span class="iconfont icon-qianbao"></span>订单
+              <span class="iconfont icon-qianbao"></span>钱包
             </li>
             <li>
-              <span class="iconfont icon-kefu"></span>订单
+              <span class="iconfont icon-kefu"></span>客服
             </li>
             <li>
-              <span class="iconfont icon-shezhi"></span>订单
+              <span class="iconfont icon-shezhi"></span>设置
             </li>
           </ul>
         </div>
@@ -487,6 +487,10 @@ export default {
       console.log(e.point.lat)
       this.center.lng = e.point.lng
       this.center.lat = e.point.lat
+    },
+    // 跳转订单页面
+    toOrderEvt () {
+      this.$router.push({ name: 'order', params: {} })
     }
   }
 }
